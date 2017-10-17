@@ -16,5 +16,9 @@
     "cordova-plugin-statusbar",
     "ionic-plugin-keyboard"
   ],
-  "cordovaPlatforms": []
+  "cordovaPlatforms": [],
+  "dependencies": {
+    "cordova-ios": "^4.4.0",
+    "swiper": "^4.0.1"
+  }
 }

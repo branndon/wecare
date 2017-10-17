@@ -19,12 +19,11 @@ $dark:                            #444 !default;
 /*$ionicons-font-path: "../lib/ionic/fonts" !default;*/
 
 /*// Include all of Ionic */
-@import "www/lib/ionic/scss/ionic";
+/*@import "www/lib/ionic/scss/ionic";*/
 
 
 .scroll {
     height: 100%;
-    color: red;
 }
  
 #map {
@@ -36,3 +35,218 @@ $dark:                            #444 !default;
 ion-nav-view{
 	top: 40px;
 }
+
+/*
+	Geral
+*/
+body{
+	font-family: 'Roboto', sans-serif;
+	/*background: #f7f7f7;*/
+}
+
+.platform-android .has-header,
+.platform-android .bar-subheader{
+	border: 0;
+}
+
+.icone-type{
+	font-size: 1.5em;
+	color: #b2b2b2;
+	background: none;
+	border: 0;
+}
+
+
+/*
+	Login
+*/
+.login-container {
+	display: -webkit-flex;
+	-webkit-flex-direction: column;
+	height: 100%;
+	width: 80%;
+	margin: 0 auto;
+
+	label{
+		border: 0;
+		padding: 0;
+		margin: 0;
+		background: transparent;
+		border: 0;
+
+		input{
+			border: 2px solid #e6e6e6;
+			border-radius: 5px;
+			margin-top: 20px;
+			padding: 20px;
+			text-align: center;
+			color: #4f4f4f;
+		}
+
+		&:first-child{
+			input{
+				margin: 0;
+			}
+		}
+	}
+
+	button.button.button-positive.button-outline{
+		background: #f6b498;
+		border-color: #f6b498;
+		color: white;
+		border-radius: 5px;
+		width: 70%;
+		margin: 0 auto;
+		text-transform: uppercase;
+	}
+
+	a{
+		text-align: center;
+		display: block;
+		width: 100%;
+		color: #4f4f4f;
+		font-weight: bold;
+		text-transform: uppercase;
+		margin-top: 40px;
+		text-decoration: none;
+		position: absolute;
+		bottom: 20px;
+		left: 0;
+		right: 0;
+		margin: auto;
+
+		&:before{
+			content: ' ';
+			display: block;
+			height: 1px;
+			width: 15%;
+			background: #4f4f4f;
+			position: absolute;
+			top: -10px;
+			left: 0;
+			right: 0;
+			margin-left: auto;
+			margin-right: auto;
+
+		}
+	}
+
+	img{
+		width: 60%;
+		max-width: 170px;
+		height: auto;
+		margin: 0 auto;
+		margin-top: 100px;
+		margin-bottom: 40px;
+	}
+}
+
+/*
+	Header
+*/
+.bar.bar-positive{
+	background: #44a3d3;
+}
+
+/*
+	Search Instituições
+*/
+.bar.bar-subheader{
+	label{
+		border: 1px solid #e6e6e6;
+		border-radius: 5px;
+		margin-top: 20px;
+		color: #4f4f4f;
+		background: none;
+	}
+}
+
+/*
+	Lista de Instituições
+*/
+.lista-instituicoes{
+
+	.list{
+		.item{
+			h3{
+				font-weight: bold;
+				text-transform: uppercase;
+			}
+		}
+	}
+}
+
+
+/*
+	Lista de Instituições Mapa
+*/
+.lista-instituicoes-mapa{
+	height: 100%;
+
+	#map{
+		height: 100%;
+		width: 100%;
+	}
+}
+
+.box1, box2, box3 {
+   height: 300px;
+   border: 2px solid blue;
+}
+
+/*
+	Instituição: Detalhes
+*/
+.detalhes{
+	.det-header{
+		height: 200px;
+		background: #ddd;
+		width: 100%;
+
+		.swiper-container{
+			margin-top: 44px;
+			z-index: 9999;
+			height: 100%;
+			background: #ddd;
+			box-shadow: none;
+			border: 0;
+		}
+	}
+
+	.det-content{
+		padding: 20px;
+		color: #a6a6a6;
+
+		.det-box{
+			border-bottom: 1px solid #e6e6e6;
+			padding-bottom: 20px;
+			margin-bottom: 20px;
+		}
+		h3,
+		h4{
+			color: #4f4f4f;
+			font-size: 18px;
+			font-weight: bold;
+		}
+		h4{
+			font-weight: initial;
+		}
+		p{
+			font-size: 12px;
+			margin: 0;
+		}
+
+		ul{
+			list-style: initial;
+			padding: 0 20px;
+			li{}
+		}
+	}
+}
+
+
+
+
+
+
+
