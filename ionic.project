@@ -1,5 +1,5 @@
 {
-  "name": "wecare",
+  "name": "myApp",
   "app_id": "",
   "gulpStartupTasks": [
     "sass",
